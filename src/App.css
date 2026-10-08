@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: #f1f5f9;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #07111f;
+  border-bottom: 1px solid #1b2a3d;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #b8c4d4;
+  font-size: 15px;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #5ee6a8;
+  text-shadow: 0 0 8px rgba(94, 230, 168, 0.5);
+}
+
+/* Home */
+
+.home {
+  min-height: 80vh;
+}
+
+.hero {
+  max-width: 850px;
+  margin: auto;
+  padding: 90px 20px 65px;
+  text-align: center;
+}
+
+.small-title {
+  color: #5ee6a8;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #5ee6a8;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin: auto;
+  color: #9eacbd;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 13px 22px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background: #5ee6a8;
+  color: #07111f;
+}
+
+.secondary-btn {
+  border: 1px solid #34465c;
+  color: #f1f5f9;
+}
+
+.primary-btn:hover {
+  background: #48d995;
+}
+
+.secondary-btn:hover {
+  border-color: #5ee6a8;
+}
+
+/* Tool Cards */
+
+.tools {
+  max-width: 950px;
+  margin: auto;
+  padding: 10px 20px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tool-card {
+  background: #0c1929;
+  border: 1px solid #1b2c40;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.tool-card:hover {
+  border-color: #3b7359;
+  transform: translateY(-5px);
+}
+
+.tool-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.tool-card h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.tool-card p {
+  color: #9eacbd;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.tool-card a {
+  color: #5ee6a8;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+  background: #050c16;
+  border-top: 1px solid #1b2a3d;
+  margin-top: 30px;
+}
+
+.footer-content {
+  max-width: 1050px;
+  margin: auto;
+  padding: 45px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 35px;
+}
+
+.footer h3 {
+  margin-bottom: 12px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  color: #5ee6a8;
+}
+
+.footer p {
+  color: #8f9dae;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer a {
+  display: block;
+  color: #8f9dae;
+  font-size: 14px;
+  line-height: 1.8;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.footer a:hover {
+  color: #5ee6a8;
+  text-shadow: 0 0 8px rgba(94, 230, 168, 0.5);
+}
+
+.footer-bottom {
+  border-top: 1px solid #172438;
+  text-align: center;
+  padding: 18px;
+}
+
+/* Password Checker */
+
+.checker-page {
+  min-height: 80vh;
+  padding: 70px 20px;
+}
+
+.checker-container {
+  max-width: 700px;
+  margin: auto;
+  animation: fadeUp 0.6s ease;
+}
+
+.checker-container h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.checker-intro {
+  color: #9eacbd;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.password-box {
+  background: #0c1929;
+  border: 1px solid #1b2c40;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.password-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.password-box input {
+  width: 100%;
+  padding: 14px;
+  background: #07111f;
+  border: 1px solid #34465c;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.password-box input:focus {
+  border-color: #5ee6a8;
+}
+
+.password-box button {
+  margin-top: 18px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #5ee6a8;
+  color: #07111f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.password-box button:hover {
+  background: #48d995;
+  transform: translateY(-2px);
+}
+
+.result-box {
+  margin-top: 25px;
+  padding: 25px;
+  background: #0c1929;
+  border: 1px solid #1b2c40;
+  border-radius: 12px;
+}
+
+.result-box h2 {
+  color: #5ee6a8;
+  margin-bottom: 10px;
+}
+
+.result-box p {
+  color: #b8c4d4;
+  margin: 8px 0;
+}
+
+.checks {
+  margin-top: 18px;
+}
+
+.checks p {
+  line-height: 1.5;
+}
+
+/* URL Detector */
+
+.url-page {
+  min-height: 80vh;
+  padding: 70px 20px;
+}
+
+.url-container {
+  max-width: 700px;
+  margin: auto;
+  animation: fadeUp 0.6s ease;
+}
+
+.url-container h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.url-intro {
+  color: #9eacbd;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.url-box {
+  background: #0c1929;
+  border: 1px solid #1b2c40;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.url-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.url-box input {
+  width: 100%;
+  padding: 14px;
+  background: #07111f;
+  border: 1px solid #34465c;
+  border-radius: 7px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.url-box input:focus {
+  border-color: #5ee6a8;
+}
+
+.url-box button {
+  margin-top: 18px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #5ee6a8;
+  color: #07111f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.url-box button:hover {
+  background: #48d995;
+  transform: translateY(-2px);
+}
+
+.url-result {
+  margin-top: 25px;
+  padding: 25px;
+  background: #0c1929;
+  border: 1px solid #1b2c40;
+  border-radius: 12px;
+}
+
+.url-result h2 {
+  color: #5ee6a8;
+  margin-bottom: 10px;
+}
+
+.url-result p {
+  color: #b8c4d4;
+  margin: 8px 0;
+}
+
+.url-checks {
+  margin-top: 18px;
+}
+
+.url-checks p {
+  line-height: 1.5;
+}
+
+/* About Page */
+
+.about-page {
+  min-height: 80vh;
+  padding: 70px 20px;
+}
+
+.about-container {
+  max-width: 950px;
+  margin: auto;
+  animation: fadeUp 0.6s ease;
+}
+
+.about-container h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about-intro {
+  max-width: 700px;
+  color: #9eacbd;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  background: #0c1929;
+  border: 1px solid #1b2c40;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.about-card:hover {
+  border-color: #3b7359;
+  transform: translateY(-5px);
+}
+
+.about-card h2 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  color: #9eacbd;
+  line-height: 1.6;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  padding: 22px;
+  background: #0c1929;
+  border-left: 3px solid #5ee6a8;
+  border-radius: 8px;
+}
+
+.disclaimer h3 {
+  margin-bottom: 8px;
+  color: #5ee6a8;
+}
+
+.disclaimer p {
+  color: #9eacbd;
+  line-height: 1.6;
+}
+
+/* Animation */
+
+.hero {
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .tools {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .checker-page,
+  .url-page {
+    padding: 50px 20px;
+  }
+
+  .checker-container h1,
+  .url-container h1 {
+    font-size: 32px;
+  }
+
+  .password-box,
+  .url-box {
+    padding: 22px;
+  }
+}
+.url-result.likely-safe h2 {
+  color: #5ee6a8;
+}
+
+.url-result.suspicious h2 {
+  color: #f5c542;
+}
+
+.url-result.dangerous h2 {
+  color: #ff6b6b;
+}
+
+.url-result.please-enter-a-url h2 {
+  color: #f5c542;
+}
